@@ -30,20 +30,22 @@
 	</div>
 	<div class="container"><br><br>
 
-      <form class="form-signin">
+      <form class="form-signin" action="newacct.php" method="post">
         <h2 class="form-signin-heading">Please Fill Out</h2>
-        <input type="text" id="inputFirstname" class="form-control" placeholder="Enter First Name" name="reg_uname" required />
-        <input type="text" id="inputLastname" class="form-control" placeholder="Enter Last Name" name="reg_lname" required />
-		<input type="text" id="inputEmail" class="form-control" placeholder="Enter Email Address" name="reg_email" required />
-		<input type="text" id="inputPhone" class="form-control" placeholder="Enter Phone Number" name="reg_phone" required /><br>
+        <input type="text" id="inputFirstname" class="form-control" placeholder="Enter First Name" name="fname" required />
+        <input type="text" id="inputLastname" class="form-control" placeholder="Enter Last Name" name="lname" required />
+		<input type="text" id="inputEmail" class="form-control" placeholder="Enter Email Address" name="email" required />
+		<input type="text" id="inputPhone" class="form-control" placeholder="Enter Phone Number" name="phone" required /><br>
+		<input type="text" id="inputPassword" class="form-control" placeholder="Enter Your Password" name="password" required /><br>
 		Birthday:
-		<input type="date" id="inputBirthday" class="form-control" name="reg_birthday" required /><br>
+		<input type="date" id="inputBirthday" class="form-control" name="birthday" required /><br>
 		Gender:<br>
 		<input type="radio" name="gender" value="male" checked> Male<br>
 		<input type="radio" name="gender" value="female"> Female<br>
 		<input type="radio" name="gender" value="other"> Other<br>
         <br>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" id="submitButton"> Signup</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="submitButton"> Signup</button><br>
+		<a href="login.php" button class="btn btn-lg btn-primary btn-block" type="submit" id="signIn"> Signin</button>
       </form>
 	</div>
   </body>
